@@ -9,13 +9,18 @@
 <body>
     <header class="header">
         <input type="text" id="userinput" placeholder="Enter new Todo">
-        <button id="blueBtn">Add</button>
+        <button id="addBtn" class="blue-btn">Add</button>
     </header>
 
     <section class="todos">
         <h1>Todo List</h1>
         <p>There are <span id="amount"></span>todos</p>
-        <div class="todo-list"></div>
+        <div class="todo-list">
+            <ul>
+                <li>Buy Milk</li>
+            </ul>
+            <button id="completeBtn" class="red-btn">Complete</button>
+        </div>
     </section>
 </body>
 </html>
