@@ -1,15 +1,19 @@
 /* CSS VARIABLES */
 
 :root {
-    --blue-color : #3483eb;
-    --red-color: #ab1609;
+    --lightblue-color: #0e85ca;
+    --blue-color : #0066da;
+    --red-color: #e71603;
     --green-color: #05b554;
+    --light-green-color: #55c57a;
     --body-color: #eee;
+    --white-color: #fff;
+    --grey-dark-color: #333;
 }
 
 
 * {
-    margin: 0 auto;
+    margin: 0 auto; 
     padding: 0;
     box-sizing: border-box
 }
@@ -24,4 +28,52 @@ html {
 body {
     max-width: 80%;
     text-align: center;
+}
+
+
+.header {
+    padding-top: 5rem;
+}
+
+.input-text {
+    width: 50%;
+    color: var(--grey-dark-color);
+    border:none;
+}
+
+.input-text:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid var(--light-green-color);
+}
+
+.input-text:focus:invalid {
+    border-bottom: 3px solid var(--red-color);
+}
+
+.blue-btn {
+    width: 10%;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    cursor: pointer;
+    border: transparent;
+}
+
+.blue-btn:hover,
+.blue-btn:visited {
+    background-color: var(--lightblue-color);
+}
+
+.blue-btn:link,
+.blue-btn:active {
+    background-color: var(--blue-color);
+}
+
+
+.input-text,
+.blue-btn {
+    padding: 1.5rem;
+    border-radius: 4px;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
 }
