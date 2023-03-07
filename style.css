@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@500&family=Sofia+Sans:wght@500&display=swap');
+
+
 /* CSS VARIABLES */
 
 :root {
@@ -13,7 +16,7 @@
 
 
 * {
-    margin: 0 auto; 
+    margin: 0; 
     padding: 0;
     box-sizing: border-box
 }
@@ -26,17 +29,30 @@ html {
 } 
 
 body {
-    max-width: 80%;
-    text-align: center;
+   font-family: Roboto, 'sans-serif';
+   font-weight: 500;
+   line-height: 1.7rem;
 }
 
+/* HEADER AND SECTION CONTAINER */
+
+.container {    
+    width: 60%;
+    margin: 0 auto;
+    text-align:center;
+}
+
+
+/*------------*/
+/*   HEADER   */
+/*------------*/
 
 .header {
     padding-top: 5rem;
 }
 
 .input-text {
-    width: 50%;
+    width: 89.6%;
     color: var(--grey-dark-color);
     border:none;
 }
@@ -76,4 +92,13 @@ body {
     border-radius: 4px;
     font-size: 1.7rem;
     letter-spacing: 2px;
+    font-family: inherit;
+   
 }
+
+
+
+/*------------*/
+/*  SECTION   */
+/*------------*/
+
