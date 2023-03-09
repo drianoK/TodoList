@@ -7,11 +7,12 @@
     --lightblue-color: #0e85ca;
     --blue-color : #0066da;
     --red-color: #e71603;
-    --green-color: #05b554;
+    --light-red-color: #fc1500;
     --light-green-color: #55c57a;
     --body-color: #eee;
     --white-color: #fff;
-    --grey-dark-color: #333;
+    --dark-grey-color: #333;
+    --light-grey-color: #777;
 }
 
 
@@ -30,7 +31,6 @@ html {
 
 body {
    font-family: Roboto, 'sans-serif';
-   font-weight: 500;
    line-height: 1.7rem;
 }
 
@@ -48,12 +48,12 @@ body {
 /*------------*/
 
 .header {
-    padding-top: 5rem;
+    padding-top: 10rem;
 }
 
 .input-text {
     width: 89.6%;
-    color: var(--grey-dark-color);
+    color: var(--dark-grey-color);
     border:none;
 }
 
@@ -91,7 +91,7 @@ body {
     padding: 1.5rem;
     border-radius: 4px;
     font-size: 1.7rem;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     font-family: inherit;
    
 }
@@ -102,3 +102,53 @@ body {
 /*  SECTION   */
 /*------------*/
 
+.todos {
+    padding-top: 5rem;
+}
+
+h1 {
+    font-size: 2.2rem;
+    text-align: left;
+    font-weight: 400;
+}
+
+.values {
+    font-size: 1.5rem;
+    text-align: right;
+    padding-top: 3rem;
+    margin-right: 6rem;
+}
+
+
+
+.todo-list {
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    list-style-type: none;
+    letter-spacing: 1px;
+}
+
+.todo-list:not(:last-child) {
+    border-bottom: none;
+}
+
+.red-btn {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: var(--red-color);
+    color: var(--white-color);
+    padding: 1rem 2rem;
+    border: 1px solid var(--red-color);
+    border-radius: inherit;
+    cursor: pointer;
+}
+
+.red-btn:hover,
+.red-btn:visited {
+    background-color: var(--light-red-color);
+}
