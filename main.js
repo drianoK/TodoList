@@ -12,7 +12,15 @@ const createListElement = () => {
     li.appendChild(document.createTextNode(input.value));
     ul.appendChild(li);
     input.value = "";
+
+    const button = document.createElement("button");
+    button.setAttribute("id", "completeBtn");
+    button.classList.add("red-btn");
+    button.appendChild(document.createTextNode("Complete"));
+    li.appendChild(button);  
 }
+    
+
 
 const addListAfterClick = (event) => {
     event.preventDefault();
