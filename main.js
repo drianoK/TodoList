@@ -4,7 +4,7 @@ const todosAmount = document.getElementById("amount");
 const buttonComp = document.getElementById("completeBtn");
 const ul = document.querySelector("ul");
 
-const inputLength = () => value.input.length;
+const inputLength = () => input.value.length;
 
 const createListElement = () => {
     const li = document.createElement("li");
@@ -12,21 +12,21 @@ const createListElement = () => {
     li.appendChild(document.createTextNode(input.value));
     ul.appendChild(li);
     input.value = "";
-
 }
-
 
 const addListAfterClick = (event) => {
-    event.prefentDefault();
-    if(inputLength() > 0 ) {
-        createTodo();
-    };
+    event.preventDefault();
+    if(inputLength() > 0 ) 
+        createListElement();
 }
 
-addToInput.addEventListener("click", createListElement);
+const addListAfterKeypress = (event) => {
+    if(inputLength() > 0 && event.keyCode === 13) 
+        createListElement();
+}
 
-
-
+addToInput.addEventListener("click", addListAfterClick);
+input.addEventListener("keypress", addListAfterKeypress);
 
 
 
