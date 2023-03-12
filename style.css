@@ -109,16 +109,28 @@ body {
 h1 {
     font-size: 2.2rem;
     text-align: left;
-    font-weight: 400;
+    
 }
 
+h2 {
+    font-size: 2rem; 
+}
+
+h1,
+h2 {
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+
 .values {
+    visibility:hidden;
     font-size: 1.5rem;
     text-align: right;
     padding-top: 3rem;
     margin-right: 6rem;
+    
 }
-
 
 
 .todo-list {
@@ -152,3 +164,4 @@ h1 {
 .red-btn:visited {
     background-color: var(--light-red-color);
 }
+
