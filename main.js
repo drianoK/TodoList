@@ -36,7 +36,6 @@ const createListElement = () => {
 }
 
 
-
 const hideHeading = () => {
     if(checkList() > 0 ) {
         const emptyTodo = document.getElementById("empty");
@@ -61,7 +60,6 @@ const addListAfterKeypress = (event) => {
     if(inputLength() > 0 && event.keyCode === 13) 
         createListElement();
 }
-
 
 addToInput.addEventListener("click", addListAfterClick);
 input.addEventListener("keypress", addListAfterKeypress);
